@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Souduro - Artisan Multiservices</title>
+  <style>
+    :root {
+      --beige: #f6f1e7;
+      --rose: #f3c8af;
+      --orange: #d17d5d;
+      --rouille: #c05239;
+      --gris-fonce: #2e2e2e;
+    }
+
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--beige);
+      color: var(--gris-fonce);
+    }
+    header {
+      background-color: var(--orange);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #fff2d8;
+      letter-spacing: 2px;
+    }
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: auto;
+    }
+    nav {
+      background-color: var(--rose);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--gris-fonce);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .cta {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: var(--rouille);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .testimonial {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: var(--orange);
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: var(--gris-fonce);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: var(--rouille);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-souduro.png" alt="Logo Souduro" class="logo">
+    <h1>Souduro</h1>
+    <p>Artisan Multiservices - Région Nantaise</p>
+    <a href="#contact" class="cta">Demander un devis gratuit</a>
+  </header>
+
+  <nav>
+    <a href="#services">Prestations</a>
+    <a href="#a-propos">À propos</a>
+    <a href="#realisations">Réalisations & Avis</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Bienvenue chez Souduro</h2>
+    <p><em>Artisan multiservices à votre service dans toute la région nantaise</em></p>
+    <img src="https://via.placeholder.com/1000x400?text=Illustration+chantier" alt="Illustration chantier multiservices" style="width:100%; border-radius: 8px; margin-top: 20px;">
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="#contact" class="cta">Demander un devis gratuit</a>
+      <a href="#contact" class="cta" style="background-color: var(--orange);">Nous contacter</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Nos prestations</h2>
+    <div class="services">
+      <div class="card">
+        <strong>🛠️ Multiservices</strong>
+        <p>Interventions variées : montage de meubles, petits dépannages, réparations diverses.</p>
+        <img src="https://via.placeholder.com/300x200?text=Multiservices" alt="Multiservices" style="width:100%; border-radius:6px;">
+      </div>
+      <div class="card">
+        <strong>🔧 Toutes soudures</strong>
+        <p>Acier, alu, inox, sur site ou en atelier.</p>
+        <img src="https://via.placeholder.com/300x200?text=Soudures" alt="Soudures" style="width:100%; border-radius:6px;">
+      </div>
+      <div class="card">
+        <strong>🏠 Zinguerie / Couverture</strong>
+        <p>Entretien, réparation et pose de toiture.</p>
+        <img src="https://via.placeholder.com/300x200?text=Couverture" alt="Couverture" style="width:100%; border-radius:6px;">
+      </div>
+      <div class="card">
+        <strong>🌿 Démoussage</strong>
+        <p>Nettoyage et traitement des toitures.</p>
+        <img src="https://via.placeholder.com/300x200?text=Démoussage" alt="Démoussage" style="width:100%; border-radius:6px;">
+      </div>
+      <div class="card">
+        <strong>🧱 Aménagement intérieur & extérieur</strong>
+        <p>Petits travaux, rénovations, poses diverses.</p>
+        <img src="https://via.placeholder.com/300x200?text=Aménagement" alt="Aménagement" style="width:100%; border-radius:6px;">
+      </div>
+      <div class="card">
+        <strong>📦 Déménagement</strong>
+        <p>Transport, manutention, organisation sur mesure.</p>
+        <img src="https://via.placeholder.com/300x200?text=Déménagement" alt="Déménagement" style="width:100%; border-radius:6px;">
+      </div>
+    </div>
+  </section>
+
+  <section id="a-propos">
+    <h2>À propos</h2>
+    <p>Souduro est dirigée par <strong>Rodolphe Leclere</strong>, artisan expérimenté basé à Nantes. Fort de plus de 20 ans dans la soudure et une dizaine d’années en couverture, il a développé un savoir-faire pointu dans ces domaines exigeants.</p>
+    <p>Tout au long de sa carrière, il a également exercé de nombreux métiers manuels, ce qui lui permet aujourd’hui de proposer un large éventail de prestations, avec rigueur, précision et adaptabilité.</p>
+    <p>Le service et la satisfaction client sont au cœur de ses priorités, avec un accompagnement de proximité et un engagement constant pour un travail bien fait.</p>
+    <p><strong>Zone d’intervention :</strong> région nantaise</p>
+    <p><strong>SIRET :</strong> 79421123500013</p>
+  </section>
+
+  <section id="realisations">
+    <h2>Réalisations & Avis clients</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Chantier 1">
+      <img src="https://via.placeholder.com/300x200" alt="Chantier 2">
+      <img src="https://via.placeholder.com/300x200" alt="Chantier 3">
+    </div>
+    <div class="testimonial">
+      <p><em>"Travail impeccable sur notre toiture. Sérieux et ponctuel !"</em><br>– Client à Rezé</p>
+    </div>
+    <div class="testimonial">
+      <p><em>"Très satisfait de l’intervention pour la soudure de notre portail. Artisan à recommander."</em><br>– Client à Saint-Herblain</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Téléphone">
+      <textarea rows="5" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p><strong>Téléphone :</strong> 07 70 50 68 55</p>
+    <p><strong>Email :</strong> <a href="mailto:leclererodolphe@yahoo.fr">leclererodolphe@yahoo.fr</a></p>
+    <p><strong>Zone d’intervention :</strong> Région nantaise</p>
+    <a class="cta" href="tel:0770506855">📞 Appel direct</a>
+  </section>
+
+  <section id="mentions">
+    <h2>Mentions légales</h2>
+    <p><strong>Souduro - Rodolphe Leclere</strong></p>
+    <p>SIRET : 79421123500013</p>
+    <p>Ce site respecte la législation sur la protection des données. Aucune donnée n’est collectée sans consentement explicite via le formulaire de contact.</p>
+    <p>Pour toute demande relative à vos données personnelles, contactez-nous par email.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Souduro - Tous droits réservés
+  </footer>
